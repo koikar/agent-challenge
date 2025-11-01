@@ -1,0 +1,30 @@
+{
+  "name": "tedix-agent-challenge-mcp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "types": "wrangler types --include-runtime false",
+    "deploy": "wrangler deploy",
+    "lint": "biome check --write",
+    "lint:check": "biome check",
+    "format": "biome format --write"
+  },
+  "dependencies": {
+    "@mcp-ui/client": "^5.14.1",
+    "@mcp-ui/server": "^5.13.1",
+    "@mendable/firecrawl-js": "^4.4.1",
+    "@modelcontextprotocol/sdk": "^1.20.2",
+    "@supabase/supabase-js": "^2.77.0",
+    "agents": "^0.2.19",
+    "dotenv": "^17.2.3",
+    "viem": "^2.38.5",
+    "x402": "^0.7.1",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.2",
+    "typescript": "^5.9.3"
+  },
+  "trustedDependencies": []
+}

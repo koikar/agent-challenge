@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+.next/
+.vercel/
+.mastra/
+.wrangler
+# Build outputs
+dist/
+build/
+out/
+
+# Environment files
+.env*
+!.env.example
+
+# IDE and system files
+.vscode/
+.DS_Store
+*.log
+
+# Other files
+README.md
+CLAUDE.md
+PRD.md
+HACKATHON.md
+SPRINT.md

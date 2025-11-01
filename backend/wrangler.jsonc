@@ -1,0 +1,45 @@
+{
+  "compatibility_date": "2025-03-14",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "nodejs_compat_populate_process_env",
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "class_name": "TedixMCP",
+        "name": "MCP_OBJECT",
+      },
+    ],
+  },
+  "main": "src/index.ts",
+  "migrations": [
+    {
+      "new_sqlite_classes": ["TedixMCP"],
+      "tag": "v1",
+    },
+  ],
+  "vars": {
+    "R2_BUCKET_NAME": "brands",
+    "AI_SEARCH_INSTANCE": "still-bush-0e04",
+    "URL": "https://nosana.tedi.studio",
+    "SUPABASE_URL": "https://ywczcwrjrpjvqoetbbsh.supabase.co"
+  },
+  "ai": {
+    "binding": "AI",
+  },
+  "r2_buckets": [
+    {
+      "binding": "BRAND_CONTENT_BUCKET",
+      "bucket_name": "brands",
+    },
+  ],
+  "name": "tedix-agent-challenge-mcp",
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+  },
+  "triggers": {
+    "crons": ["* * * * *"],
+  },
+}
